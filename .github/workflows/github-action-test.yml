@@ -1,0 +1,10 @@
+name: github-action-test
+on:
+  pull_request:
+    branches: 
+      - master
+jobs:
+  example-job:
+    steps:
+      - name: npm -v
+        run: npm -v
