@@ -1,10 +1,11 @@
 name: github-action-test
 on:
-  pull_request:
+  push:
     branches: 
       - master
 jobs:
   example-job:
+    runs-on: ubuntu-latest
     steps:
       - name: node -v
         run: node -v
